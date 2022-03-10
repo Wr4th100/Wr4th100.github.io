@@ -1,0 +1,179 @@
+body {
+    background-image: url("space.jpg");
+    background-color: black;
+    background-size: 1920px, 1080px;
+}
+
+#Logo {
+    display: flex;
+    padding-left: 120px;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+@font-face {
+    font-family: "Neptune";
+    src: url(Neptune.otf);
+    font-stretch: ultra-expanded;
+        }
+
+@font-face {
+    font-family: "Ikaros";
+    src: url(Ikaros-Regular.otf);
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: "Ultra";
+    src: url(Ultra.otf);
+}
+
+#head {
+    font-family: Neptune ;
+    color: white;
+    margin-left: 500px;
+}
+#intro{
+    font-family: Ikaros;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 100px;
+}
+.container img:hover{
+    box-shadow: 10px 10px 5px white;
+    -moz-box-shadow: 0px 10px 5px white;
+    -webkit-box-shadow: 0px 10px 5px white;  
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 120px #fff;
+}
+.neonImage {
+    box-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff;
+    /* 0 0 20px #fff,
+    0 0 25px #fff,
+    0 0 30px #fff */
+    text-align: center;
+    width: 300px;
+}
+
+#HeadingsLogo {
+    font-family: "Ultra";
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.profilePics {
+    height: 300px;
+    width: 300px;
+}
+
+.container {
+    padding: 20px;
+    color: #fff;
+    font-family: "Ikaros";
+    font-size: 30px;
+}
+#Image1 {
+    margin-left: 140px;
+    margin-top: 100px;
+}
+#Image2 {
+    margin-left: 170px;
+    margin-top: 100px;
+}
+#Image3{
+    margin-left: 380px;
+    margin-top: 100px;
+}
+
+.sidebyside {
+    float: left;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.10); /* IE 9 */
+    -webkit-transform: scale(1.10); /* Safari 3-8 */
+    transform: scale(1.10); 
+}
+
+#ContributionsLogo {
+    font-family: "Ultra";
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 1100px;
+    
+}
+#Achievements {
+    font-family: "Ikaros";
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.containerFooter {
+    padding-top: 320px;
+    color: #fff;
+    font-family: "Ikaros";
+    font-size: 30px;
+    background-color: red;
+}
+#discordWidget {
+    padding-right: 200px;
+    margin-left: 100px;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+#DiscordHeading {
+    font-family: "Ultra";
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+}
+#DiscordText {
+    font-family: Ikaros;
+    color: white;
+    font-size: x-large;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+.wrapper{
+    display: flex;
+    
+}
+.backgroundFooter {
+    margin-top: 100px;
+    background: black;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+.backgroundText{
+    color: #fff;
+    font-family: Ikaros;
+    text-align: center;
+                
+}

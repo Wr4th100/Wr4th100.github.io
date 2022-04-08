@@ -25,7 +25,7 @@
     transform: scale(1.10); 
 }
 
-@media (min-width: 600px){
+@media (min-width: 721px){
 
     body {
         background-image: url("space.jpg");
@@ -194,7 +194,7 @@
 
 }
 
-@media (max-width: 599px){
+@media (max-width: 720px){
 
     body {
         background-image: url("space2.jpg");
@@ -205,7 +205,7 @@
 
     #Logo {
         display: flex;
-        margin-left: 90px;
+        justify-content: center;
         margin-top: 40px;
     }
     
@@ -269,21 +269,22 @@
         color: #fff;
         font-family: "Ikaros";
         font-size: 30px;
+              
     }
 
     #Image1 {
         margin-top: 40px;
-        margin-left: 80px;
+        margin-left: 250px;
     }
 
     #Image2 {
         margin-top: 40px;
-        margin-left: 80px;
+        margin-left: 250px;
     }
 
     #Image3 {
         margin-top: 40px;
-        margin-left: 80px;
+        margin-left: 250px;
     }
 
     #ContributionsLogo {
@@ -298,9 +299,10 @@
     #Achievements {
         font-family: "Ikaros";
         color: white;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
         margin-top: 30px;
+        margin-left: 40px;
           
     }
     #DiscordHeading {
@@ -314,16 +316,17 @@
     #DiscordText {
         font-family: Ikaros;
         color: white;
-        font-size: large;
+        font-size: 30px;
         margin-top: 40px;
-        margin-left: 10px;
+        margin-left: 30px;
         text-align: center;
     }
     #discordWidget {
-        padding-left: 50px;
-        padding-right: 340px;
+        margin-top: 40px;
+        padding-left: 100px;
+        padding-right: 60px;
+      
     }
-
     
     .backgroundFooter {
         margin-top: 100px;
@@ -336,6 +339,10 @@
         font-family: Ikaros;
         text-align: center;
                     
+    }
+    .sidebyside {
+        display: flex;
+        flex-direction: column;
     }
 
 

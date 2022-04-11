@@ -25,7 +25,27 @@
     transform: scale(1.10); 
 }
 
-@media (min-width: 721px){
+.container img:hover{
+    box-shadow: 10px 10px 5px white;
+    -moz-box-shadow: 0px 10px 5px white;
+    -webkit-box-shadow: 0px 10px 5px white;  
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 120px #fff;
+}
+
+
+@media (min-width: 721px) {
 
     body {
         background-image: url("space.jpg");
@@ -34,44 +54,33 @@
     }
     
     #Logo {
-        display: flex;
-        padding-left: 120px;
-        margin-left: 500px;
+        display: flex;        
+        align-items: center;
         margin-top: 100px;
     }
-    
-    
-    
+       
     #head {
         font-family: Neptune ;
         color: white;
-        margin-left: 500px;
+        text-align: center;    
     }
-    #intro{
+
+    #intro {
         font-family: Ikaros;
         color: white;
         font-size: x-large;
         text-align: center;
         padding-top: 100px;
-    }
-    .container img:hover{
-        box-shadow: 10px 10px 5px white;
-        -moz-box-shadow: 0px 10px 5px white;
-        -webkit-box-shadow: 0px 10px 5px white;  
-    }
+    }    
     
-    .neonText {
+    #HeadingsLogo {
+        font-family: "Ultra";
         color: #fff;
-        text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #fff,
-            0 0 82px #fff,
-            0 0 92px #fff,
-            0 0 102px #fff,
-            0 0 120px #fff;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 100px;
     }
+
     .neonImage {
         box-shadow: 
         0 0 7px #fff,
@@ -82,14 +91,6 @@
         0 0 30px #fff */
         text-align: center;
         width: 300px;
-    }
-    
-    #HeadingsLogo {
-        font-family: "Ultra";
-        color: #fff;
-        font-size: 60px;
-        text-align: center;
-        margin-top: 100px;
     }
     
     .profilePics {
@@ -98,36 +99,20 @@
     }
     
     .container {
+        display: flex;
         padding: 20px;
         color: #fff;
         font-family: "Ikaros";
         font-size: 30px;
-    }
-    #Image1 {
-        margin-left: 140px;
-        margin-top: 100px;
-    }
-    #Image2 {
-        margin-left: 170px;
-        margin-top: 100px;
-    }
-    #Image3{
-        margin-left: 380px;
-        margin-top: 100px;
-    }
+        
+    }    
     
     .sidebyside {
-        float: left;
-    }
-    
-    .zoom {
-        transition: transform .2s;
-    }
-    
-    .zoom:hover {
-        -ms-transform: scale(1.10); /* IE 9 */
-        -webkit-transform: scale(1.10); /* Safari 3-8 */
-        transform: scale(1.10); 
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 50px;
+        justify-content: center;   
     }
     
     #ContributionsLogo {
@@ -135,84 +120,82 @@
         color: #fff;
         font-size: 60px;
         text-align: center;
-        margin-top: 1100px;
-        
+        margin-top: 100px;   
     }
+
     #Achievements {
         font-family: "Ikaros";
         color: white;
-        font-size: 20px;
+        font-size: x-large;
         text-align: center;
         margin-top: 20px;
-    
     }
-    
-    .containerFooter {
-        padding-top: 320px;
-        color: #fff;
-        font-family: "Ikaros";
-        font-size: 30px;
-        background-color: red;
-    }
+      
     #discordWidget {
-        padding-right: 200px;
-        margin-left: 100px;
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-right: 150px;
+        display: flex;
+        align-self: center;    
     }
+
     #DiscordHeading {
         font-family: "Ultra";
         color: #fff;
         font-size: 60px;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 60px;
     }
+
     #DiscordText {
+        display: flex;
         font-family: Ikaros;
         color: white;
         font-size: x-large;
-        margin-top: 200px;
-        margin-left: 300px;
+        align-self: center;
+        flex-direction: column;
     }
+
     .wrapper{
         display: flex;
-        
+        flex-wrap: wrap;
+        flex-direction: column;   
     }
+
     .backgroundFooter {
         margin-top: 100px;
         background: black;
         background-blend-mode: darken;
         background-size: cover;
     }
+
     .backgroundText{
         color: #fff;
         font-family: Ikaros;
         text-align: center;
-                    
-    }
+    }  
 
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
 
     body {
         background-image: url("space2.jpg");
         background-color: black;
         height: 100%;
-        background-position: center;
+        background-size: auto;
+        width: 100%;
     }
 
     #Logo {
+        image-rendering: auto;
+        margin-top: 50px;
         display: flex;
-        justify-content: center;
-        margin-top: 40px;
+        align-items: center;
     }
     
     #head {
         font-family: Neptune ;
         color: white;
-        text-align: center;
+               
+        align-items: center;           
     }
     
     #intro{
@@ -231,24 +214,7 @@
         margin-top: 100px;
         margin-left: 30px;
     }
-    .container img:hover{
-        box-shadow: 10px 10px 5px white;
-        -moz-box-shadow: 0px 10px 5px white;
-        -webkit-box-shadow: 0px 10px 5px white;  
-    }
-    
-    .neonText {
-        color: #fff;
-        text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #fff,
-            0 0 82px #fff,
-            0 0 92px #fff,
-            0 0 102px #fff,
-            0 0 120px #fff;
-    }
+
     .neonImage {
         box-shadow: 
         0 0 7px #fff,
@@ -260,33 +226,19 @@
         text-align: center;
         width: 250px;
     }
+    
     .profilePics {
         height: 250px;
         width: 250px;
     }
+
     .container {
         padding: 20px;
         color: #fff;
         font-family: "Ikaros";
-        font-size: 30px;
-              
+        font-size: 30px;       
     }
-
-    #Image1 {
-        margin-top: 40px;
-        margin-left: 250px;
-    }
-
-    #Image2 {
-        margin-top: 40px;
-        margin-left: 250px;
-    }
-
-    #Image3 {
-        margin-top: 40px;
-        margin-left: 250px;
-    }
-
+    
     #ContributionsLogo {
         font-family: "Ultra";
         color: #fff;
@@ -294,38 +246,37 @@
         text-align: center;
         margin-top: 60px;
         margin-left: 30px;
-       
     }
+
     #Achievements {
         font-family: "Ikaros";
         color: white;
         font-size: 30px;
         text-align: center;
         margin-top: 30px;
-        margin-left: 40px;
-          
+        margin-left: 10px;   
     }
+
     #DiscordHeading {
         font-family: "Ultra";
         color: #fff;
         font-size: 60px;
         text-align: center;
-        padding-top: 50px;
-        margin-left: 30px;
+        padding-top: 40px;   
     }
+
     #DiscordText {
         font-family: Ikaros;
         color: white;
         font-size: 30px;
         margin-top: 40px;
-        margin-left: 30px;
         text-align: center;
     }
+
     #discordWidget {
-        margin-top: 40px;
-        padding-left: 100px;
-        padding-right: 60px;
-      
+        margin-top: 30px;
+        width: fit-content;
+        align-self: center; 
     }
     
     .backgroundFooter {
@@ -334,16 +285,34 @@
         background-blend-mode: darken;
         background-size: cover;
     }
+
     .backgroundText{
         color: #fff;
         font-family: Ikaros;
-        text-align: center;
-                    
+        text-align: center;              
     }
+
     .sidebyside {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 30px;
+        justify-content: center;  
     }
 
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+}
+
+html {
+    scroll-behavior: smooth;
+    width: fit-content;
 }

@@ -170,7 +170,31 @@
         color: #fff;
         font-family: Ikaros;
         text-align: center;
-    }  
+    }
+    
+    .sub-div {
+        max-height: 100vh;
+        overflow-y: scroll;
+        scrollbar-color: #fff #000;
+        overflow-x: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 1.2em;
+        overflow-x: none;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #fff;
+        margin-block: 0.25em;
+        border-radius: 0.3em;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #000;
+        border-radius: 0.3em;
+        border: #fff solid;
+        /* background: -webkit-linear-gradient(to right, #fff, #000);
+        background: linear-gradient(to right, #fff, #000);     */
+    }
 
 }
 
@@ -299,6 +323,7 @@
         margin: 30px;
         justify-content: center;  
     }
+    
 
 }
 
